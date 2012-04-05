@@ -86,6 +86,6 @@ if sleep == None:
 	statuses = api.user_timeline(count=1)
 	for status in statuses:
 		# TODO: validate the output for the case where the status is not set, or not set correctly
-		print re.compile(r'.* (\d+\.\d+\.\d+\.\d+)').search(str(status.text)).group(1):
+		print re.compile(r'.* (\d+\.\d+\.\d+\.\d+)').search(str(status.text)).group(1)
 else:
 	daemon_mode(username,api,sleep)
