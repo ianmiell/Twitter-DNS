@@ -1,8 +1,11 @@
+#!/usr/bin/env python
+
 import tweepy
 import urllib2
 import re
 import argparse
 import time
+
 
 def setupArgs():
 	parser = argparse.ArgumentParser(description='Twitter DNS Updater')
